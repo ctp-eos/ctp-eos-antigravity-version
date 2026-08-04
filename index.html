@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="nuke-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTP-EOS // Conscious Translational Physics & Open Source Ecosystem Portal</title>
+    <meta name="description" content="Official PHP-Nuke style cyber portal for CTP-EOS. Summarizing 189 repositories covering Conscious Translational Physics, Audio VST/DSP engineering, Arch Linux WMs, and pure-assembly low level tools.">
+    <meta name="keywords" content="CTP-EOS, Conscious Translational Physics, VST, Audio DSP, Hyprland, 2bwm, Arch Linux, Post-Quantum, GitHub Repositories">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- CRT SCANLINE OVERLAY -->
+    <div class="scanline-overlay" id="scanlinesOverlay"></div>
+
+    <div class="portal-wrapper">
+
+        <!-- TOP NUKE NAVIGATION & TICKER BAR -->
+        <header class="nuke-top-bar">
+            <div class="nuke-status-group">
+                <div class="status-indicator">
+                    <span class="dot-led"></span>
+                    <span>CTP-NODE: ACTIVE</span>
+                </div>
+                <div class="status-indicator" style="color: var(--primary);">
+                    <span>COHERENCE: 98.4%</span>
+                </div>
+            </div>
+
+            <div class="nuke-ticker">
+                <div class="ticker-content">
+                    🚨 [SYSTEM ANNOUNCEMENT] Welcome to the CTP-EOS Cyber Portal! // 189 Repositories Online // Post-Quantum Ontoenergetic Physics, VST Audio Engines & Linux WM Ecosystem Archives Ready.
+                </div>
+            </div>
+
+            <div class="nuke-controls">
+                <select id="themeSelect" class="nuke-btn" style="padding: 3px 6px;">
+                    <option value="nuke-dark">Theme: Nuke Cyber Dark</option>
+                    <option value="cerulean">Theme: Cerulean Deep Blue</option>
+                    <option value="matrix">Theme: Matrix Green</option>
+                    <option value="amber">Theme: Amber CRT</option>
+                    <option value="catppuccin">Theme: Catppuccin Macchiato</option>
+                </select>
+                <button id="toggleScanlines" class="nuke-btn" style="padding: 3px 8px;">Scanlines</button>
+            </div>
+        </header>
+
+        <!-- MAIN NUKE HERO BANNER -->
+        <div class="nuke-banner">
+            <div class="banner-grid-overlay"></div>
+            <div class="nuke-logo-row">
+                <div class="nuke-title">
+                    ⚛️ [ C T P - E O S ] <span>PORTAL</span>
+                </div>
+                <div class="nuke-badge-box">
+                    <span class="nuke-badge">PHP-NUKE 8.5 CLASSIC</span>
+                    <span class="nuke-badge">189 REPOSITORIES</span>
+                    <span class="nuke-badge">26 ORIGINALS</span>
+                    <span class="nuke-badge">163 FORKS</span>
+                </div>
+            </div>
+            <div class="nuke-subtext">
+                CONSCIOUS TRANSLATIONAL PHYSICS • ONTOENERGETIC SCIENCE • VST AUDIO/DSP • LINUX WM RICES • ASSEMBLY HARDWARE
+            </div>
+        </div>
+
+        <!-- 3-COLUMN MAIN LAYOUT -->
+        <main class="nuke-layout-grid">
+
+            <!-- LEFT SIDEBAR -->
+            <aside class="left-sidebar">
+
+                <!-- MODULE: MAIN MENU -->
+                <div class="nuke-block">
+                    <div class="nuke-block-title">
+                        <div class="title-left">
+                            <span>📂 MAIN MODULES</span>
+                        </div>
+                        <span class="title-controls">[-]</span>
+                    </div>
+                    <div class="nuke-block-content" style="padding: 6px;">
+                        <ul class="nuke-menu-list" id="categoryMenuList">
+                            <!-- Populated dynamically by JS -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- MODULE: ECOSYSTEM STATS -->
+                <div class="nuke-block">
+                    <div class="nuke-block-title">
+                        <div class="title-left">
+                            <span>📊 PORTAL STATS</span>
+                        </div>
+                        <span class="title-controls">[-]</span>
+                    </div>
+                    <div class="nuke-block-content">
+                        <div class="stat-row">
+                            <span>Total Repositories:</span>
+                            <span class="stat-value" id="statTotalRepos">189</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Original Projects:</span>
+                            <span class="stat-value" id="statOrigRepos">26</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Ecosystem Forks:</span>
+                            <span class="stat-value" id="statForkRepos">163</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Primary License:</span>
+                            <span class="stat-value">GPL-3.0 / MIT</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Quantum State:</span>
+                            <span class="stat-value" style="color: var(--secondary);">ENTANGLED</span>
+                        </div>
+                        
+                        <div style="margin-top: 10px;">
+                            <div style="font-family: var(--font-mono); font-size: 11px; color: var(--text-muted);">FIELD COHERENCE:</div>
+                            <div class="coherence-bar">
+                                <div class="coherence-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MODULE: QUICK LINKS -->
+                <div class="nuke-block">
+                    <div class="nuke-block-title">
+                        <div class="title-left">
+                            <span>🔗 EXTERNAL LINKS</span>
+                        </div>
+                        <span class="title-controls">[-]</span>
+                    </div>
+                    <div class="nuke-block-content">
+                        <ul class="nuke-menu-list">
+                            <li><a href="https://github.com/ctp-eos" target="_blank" rel="noopener" class="nuke-menu-item"><span>🐙 GitHub Org (ctp-eos)</span></a></li>
+                            <li><a href="https://github.com/ctp-eos/ctp-eos" target="_blank" rel="noopener" class="nuke-menu-item"><span>📜 CTP-EOS Project Docs</span></a></li>
+                            <li><a href="https://github.com/ctp-eos/ctp-sci" target="_blank" rel="noopener" class="nuke-menu-item"><span>⚛️ CTP Science Core</span></a></li>
+                            <li><a href="https://github.com/ctp-eos/ctp-is-disclosure" target="_blank" rel="noopener" class="nuke-menu-item"><span>📡 CTP Disclosure Archive</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </aside>
+
+            <!-- CENTER MAIN CONTENT -->
+            <section class="center-content">
+
+                <!-- TOOLBAR & FILTERS -->
+                <div class="center-toolbar">
+                    <div class="search-box">
+                        <span style="color: var(--primary);">🔍</span>
+                        <input type="text" id="searchInput" placeholder="Search 189 repos by name, keyword, language..." autocomplete="off">
+                    </div>
+
+                    <div class="filter-buttons">
+                        <button class="nuke-btn filter-btn active" data-filter="all">ALL (189)</button>
+                        <button class="nuke-btn filter-btn" data-filter="original">ORIGINALS (26)</button>
+                        <button class="nuke-btn filter-btn" data-filter="fork">FORKS (163)</button>
+                    </div>
+                </div>
+
+                <!-- MODULE: REPOSITORY MATRIX -->
+                <div class="nuke-block">
+                    <div class="nuke-block-title">
+                        <div class="title-left">
+                            <span id="categoryTitle">🗂️ All Repositories Matrix</span>
+                        </div>
+                        <div class="title-left">
+                            <span class="repo-type-badge badge-orig" id="repoCountBadge">189 Repos</span>
+                        </div>
+                    </div>
+                    <div class="nuke-block-content">
+                        <div class="repo-matrix-grid" id="repoGrid">
+                            <!-- Rendered dynamically by app.js -->
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- RIGHT SIDEBAR -->
+            <aside class="right-sidebar">
+
+                <!-- MODULE: CYBER TERMINAL / SHOUTBOX -->
+                <div class="nuke-block">
+                    <div class="nuke-block-title">
+                        <div class="title-left">
+                            <span>💻 CYBER TERMINAL</span>
+                        </div>
+                        <span class="title-controls">[-]</span>
+                    </div>
+                    <div class="nuke-block-content" style="padding: 0;">
+                        <div class="terminal-block">
+                            <div class="terminal-screen" id="terminalScreen">
+                                <!-- Dynamic terminal logs -->
+                            </div>
+                            <div class="terminal-input-line">
+                                <span class="term-prompt">&gt;</span>
+                                <input type="text" id="terminalInput" class="terminal-input" placeholder="type 'help'..." autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MODULE: SPOTLIGHT PROJECTS -->
+                <div class="nuke-block">
+                    <div class="nuke-block-title">
+                        <div class="title-left">
+                            <span>⭐ CORE SPOTLIGHT</span>
+                        </div>
+                        <span class="title-controls">[-]</span>
+                    </div>
+                    <div class="nuke-block-content">
+                        <ul class="nuke-menu-list">
+                            <li><a href="https://github.com/ctp-eos/ctp-eos" target="_blank" class="nuke-menu-item"><span>ctp-eos (Core Scope)</span> <span class="menu-count-badge">ORIGINAL</span></a></li>
+                            <li><a href="https://github.com/ctp-eos/ctp-sci" target="_blank" class="nuke-menu-item"><span>ctp-sci (CTP Sciences)</span> <span class="menu-count-badge">ORIGINAL</span></a></li>
+                            <li><a href="https://github.com/ctp-eos/ctp-is-disclosure" target="_blank" class="nuke-menu-item"><span>ctp-is-disclosure</span> <span class="menu-count-badge">ORIGINAL</span></a></li>
+                            <li><a href="https://github.com/ctp-eos/gravity-hack" target="_blank" class="nuke-menu-item"><span>gravity-hack (Casimir)</span> <span class="menu-count-badge">FORK</span></a></li>
+                            <li><a href="https://github.com/ctp-eos/frame" target="_blank" class="nuke-menu-item"><span>frame (Pure ASM X11)</span> <span class="menu-count-badge">FORK</span></a></li>
+                            <li><a href="https://github.com/ctp-eos/glass" target="_blank" class="nuke-menu-item"><span>glass (ASM Terminal)</span> <span class="menu-count-badge">FORK</span></a></li>
+                            <li><a href="https://github.com/ctp-eos/2bwm" target="_blank" class="nuke-menu-item"><span>2bwm (Fast Floating WM)</span> <span class="menu-count-badge">FORK</span></a></li>
+                            <li><a href="https://github.com/ctp-eos/acro-tweak-tool" target="_blank" class="nuke-menu-item"><span>acro-tweak-tool</span> <span class="menu-count-badge">FORK</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- MODULE: COMMUNITY POLL -->
+                <div class="nuke-block">
+                    <div class="nuke-block-title">
+                        <div class="title-left">
+                            <span>🗳️ REPO POLL</span>
+                        </div>
+                        <span class="title-controls">[-]</span>
+                    </div>
+                    <div class="nuke-block-content">
+                        <div style="font-family: var(--font-mono); font-size: 12px; color: var(--text-bright); margin-bottom: 8px;">
+                            What is your primary focus area in CTP-EOS?
+                        </div>
+                        <div class="poll-options">
+                            <div class="poll-item">
+                                <span>⚛️ Quantum & CTP Science</span>
+                                <div class="poll-bar"></div>
+                            </div>
+                            <div class="poll-item">
+                                <span>🎛️ Audio VST & DSP Engineering</span>
+                                <div class="poll-bar"></div>
+                            </div>
+                            <div class="poll-item">
+                                <span>🪟 Arch Linux WMs & Dotfiles</span>
+                                <div class="poll-bar"></div>
+                            </div>
+                            <div class="poll-item">
+                                <span>💻 Pure Assembly Low-Level Systems</span>
+                                <div class="poll-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </aside>
+
+        </main>
+
+        <!-- NUKE PORTAL FOOTER -->
+        <footer class="nuke-footer">
+            <div>[ === CTP-EOS CONSCIOUS TRANSLATIONAL PHYSICS ECOSYSTEM PORTAL === ]</div>
+            <div>Powered by PHP-Nuke Classic Architecture Concept & HTML5/CSS3 Web Engine</div>
+            <div>Archiving 189 Public Repositories @ <a href="https://github.com/ctp-eos" target="_blank" style="color: var(--primary);">github.com/ctp-eos</a></div>
+        </footer>
+
+    </div>
+
+    <!-- REPO DETAIL MODAL -->
+    <div class="nuke-modal-backdrop" id="repoModal">
+        <div class="nuke-modal-box">
+            <button class="modal-close-btn" id="modalClose">X</button>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                <h3 id="modalTitle" style="color: var(--primary); font-size: 18px;">Repo Title</h3>
+                <span id="modalType" class="repo-type-badge badge-orig">ORIGINAL</span>
+            </div>
+            <p id="modalDesc" style="color: var(--text-muted); font-size: 13px; margin-bottom: 12px;">Repository Description</p>
+            
+            <div style="font-size: 11px; color: var(--text-bright); margin-top: 10px;">QUICK CLONE COMMAND:</div>
+            <div class="modal-code-block">
+                <span id="modalCloneCmd">git clone ...</span>
+            </div>
+
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 16px; font-size: 12px;">
+                <div>Language: <strong id="modalLang" style="color: var(--secondary);">C++</strong></div>
+                <a id="modalGithubLink" href="#" target="_blank" rel="noopener" class="nuke-btn" style="text-decoration: none;">View on GitHub →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="js/repos-data.js"></script>
+    <script src="js/terminal.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>

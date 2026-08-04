@@ -1,0 +1,5 @@
+# Scratch & Temporary data files
+*.json
+*.py
+scratch/
+.system_generated/
