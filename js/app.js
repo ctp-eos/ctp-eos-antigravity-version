@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalClose = document.getElementById('modalClose');
 
     // --- INITIALIZE THEME ---
-    const savedTheme = localStorage.getItem('ctp_theme') || 'nuke-dark';
+    const savedTheme = localStorage.getItem('ctp_theme') || 'cerulean';
     document.documentElement.setAttribute('data-theme', savedTheme);
     if (themeSelect) {
         themeSelect.value = savedTheme;
