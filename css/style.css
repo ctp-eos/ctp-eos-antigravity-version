@@ -767,6 +767,33 @@ body {
     box-shadow: 0 0 8px var(--primary-glow);
 }
 
+/* Explicit styling for Theme Dropdown Select & Option popups */
+select.nuke-btn, select#themeSelect {
+    background-color: var(--bg-panel) !important;
+    color: var(--primary) !important;
+    border: 1px solid var(--border-bright) !important;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    padding: 4px 8px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 6px var(--primary-glow);
+}
+
+select.nuke-btn option, select#themeSelect option {
+    background-color: var(--bg-panel) !important;
+    color: var(--text-main) !important;
+    font-family: var(--font-mono);
+    padding: 8px;
+}
+
+select.nuke-btn option:hover,
+select.nuke-btn option:focus,
+select.nuke-btn option:checked {
+    background-color: var(--bg-dark) !important;
+    color: var(--primary) !important;
+}
+
 /* --- REPOSITORY MATRIX GRID --- */
 .repo-matrix-grid {
     display: grid;
