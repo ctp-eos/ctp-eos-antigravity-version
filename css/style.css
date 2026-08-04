@@ -349,6 +349,37 @@
     --term-text: #859900;
 }
 
+[data-theme="corporate"] {
+    --bg-dark: #f8fafc;
+    --bg-panel: #ffffff;
+    --bg-panel-header: linear-gradient(180deg, #1e40af 0%, #1e3a8a 100%);
+    --bg-block-title: linear-gradient(90deg, #1e3a8a 0%, #2563eb 100%);
+    --border-color: #cbd5e1;
+    --border-bright: #2563eb;
+    --border-bevel: 2px solid #2563eb44;
+    
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --text-bright: #ffffff;
+    
+    --primary: #2563eb;
+    --primary-glow: rgba(37, 99, 235, 0.25);
+    --secondary: #0284c7;
+    --secondary-glow: rgba(2, 132, 199, 0.2);
+    --accent: #d97706;
+    
+    --badge-orig-bg: rgba(37, 99, 235, 0.1);
+    --badge-orig-border: #2563eb;
+    --badge-orig-text: #1d4ed8;
+    
+    --badge-fork-bg: rgba(241, 245, 249, 0.8);
+    --badge-fork-border: #94a3b8;
+    --badge-fork-text: #475569;
+    
+    --term-bg: #f1f5f9;
+    --term-text: #0f172a;
+}
+
 /* --- RESET & BASE STYLES --- */
 * {
     box-sizing: border-box;
