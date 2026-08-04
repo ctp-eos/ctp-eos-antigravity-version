@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 break;
 
             case 'theme':
-                const validThemes = ['nuke-dark', 'cerulean', 'matrix', 'amber', 'catppuccin'];
+                const validThemes = ['cerulean', 'nuke-dark', 'matrix', 'amber', 'synthwave', 'dracula', 'nord', 'cyberpunk', 'tokyonight', 'solarized', 'catppuccin'];
                 if (validThemes.includes(arg)) {
                     document.documentElement.setAttribute('data-theme', arg);
                     localStorage.setItem('ctp_theme', arg);
