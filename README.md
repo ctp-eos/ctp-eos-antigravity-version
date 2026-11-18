@@ -6,9 +6,9 @@ Welcome to the official **CTP-EOS GitHub Portal** repository.
 
 This repository powers the **CTP-EOS GitHub Pages website**, providing an interactive, visual front-end for exploring the entire CTP-EOS GitHub ecosystem.
 
-**Live Portal**
+**Live Portal (archived version)**
 
-https://ctp-eos.github.io
+https://ctp-eos.github.io/ctp-eos-antigravity-version/
 
 ---
 
@@ -77,13 +77,14 @@ along with a growing collection of software, themes, utilities, documentation, a
 ```
 /
 ├── index.html
-├── assets/
-│   ├── css/
-│   ├── js/
-│   ├── images/
-│   └── icons/
+├── css/
+│   └── style.css
+├── js/
+│   ├── app.js
+│   ├── repos-data.js
+│   └── terminal.js
 ├── README.md
-└── LICENSE
+└── .gitignore
 ```
 
 (The structure will continue evolving as the portal expands.)
@@ -132,9 +133,9 @@ Please open an Issue before submitting large architectural changes.
 
 https://github.com/ctp-eos
 
-**GitHub Portal**
+**GitHub Portal (archived version)**
 
-https://ctp-eos.github.io
+https://ctp-eos.github.io/ctp-eos-antigravity-version/
 
 ---
 
