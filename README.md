@@ -1,3 +1,5 @@
+> **Archived — first version.** This is the original CTP-EOS site, built with Antigravity (August 2026). It is kept here as the Antigravity version. The new CTP-EOS site, built with Muse, lives at https://ctp-eos.github.io/ (repo ctp-eos/ctp-eos.github.io). Archived 2026-11-18.
+
 # CTP-EOS GitHub Portal
 
 Welcome to the official **CTP-EOS GitHub Portal** repository.
